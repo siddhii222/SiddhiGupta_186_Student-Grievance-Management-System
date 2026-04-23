@@ -12,7 +12,10 @@ export default function Login() {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", form);
+      const res = await axios.post(
+  "https://siddhigupta-186-student-grievance.onrender.com/api/auth/login",
+  form
+);
       localStorage.setItem("name", res.data.name);
       localStorage.setItem("token", res.data.token);
       navigate("/dashboard");

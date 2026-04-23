@@ -13,7 +13,7 @@ export default function Dashboard() {
   const token = localStorage.getItem("token");
   const name = localStorage.getItem("name");
 
-  const API = "http://localhost:5000/api/grievances";
+ const API = "https://siddhigupta-186-student-grievance.onrender.com/api/grievances";
 
   const fetchData = async () => {
     const res = await axios.get(API, {
